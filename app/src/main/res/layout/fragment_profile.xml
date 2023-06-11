@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_120dp"
+            android:src="@drawable/banner"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMaterial"
+            android:layout_width="@dimen/dimen_102dp"
+            android:layout_height="@dimen/dimen_102dp"
+            android:backgroundTint="@color/pink"
+            android:elevation="@dimen/dimen_0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:shapeAppearanceOverlay="@style/circleImageView">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageview"
+                android:layout_width="@dimen/dimen_110dp"
+                android:layout_height="@dimen/dimen_110dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/dimen_3dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ristian_aditya"
+            style="@style/robotoBold"
+            android:textSize="@dimen/textSize_21sp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="@+id/cardMaterial"
+            app:layout_constraintTop_toBottomOf="@+id/cardMaterial" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/robotoReguler"
+            android:text="@string/email"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginStart="@dimen/dimen_2dp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listHobbies"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25dp"
+                android:background="@drawable/shape_pink_button"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingStart="@dimen/dimen_7dp"
+                android:paddingEnd="@dimen/dimen_7dp">
+
+                <TextView
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/web_developer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25dp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:background="@drawable/shape_pink_button"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingStart="@dimen/dimen_7dp"
+                android:paddingEnd="@dimen/dimen_7dp">
+
+                <TextView
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/android_developer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25dp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:background="@drawable/shape_pink_button"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_5dp"
+                android:paddingStart="@dimen/dimen_7dp"
+                android:paddingEnd="@dimen/dimen_7dp">
+
+                <TextView
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fullstack"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/robotoReguler"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/deskripsi_body"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/listHobbies" />
+
+        <TextView
+            android:id="@+id/textFindMe"
+            style="@style/robotoBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/find_me"
+            android:textColor="@color/grey90"
+            android:textSize="@dimen/textSize_16sp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textFindMe">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/wa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/whatsapp"
+                    android:textSize="@dimen/textSize_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/whatsappButton"
+                    android:layout_width="@dimen/dimen_62dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:text="@string/open"
+                    app:cornerRadius="@dimen/dimen_10dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/dimen_2dp"
+                    android:paddingBottom="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:textColor="@color/darkGreen"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/darkGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linePertma"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/grey30"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageInstagram"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/instagram"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textInstagram"
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/instagram"
+                    android:textSize="@dimen/textSize_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageInstagram"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/instagramButton"
+                    android:layout_width="@dimen/dimen_62dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:text="@string/open"
+                    app:cornerRadius="@dimen/dimen_10dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/dimen_2dp"
+                    android:paddingBottom="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:textColor="@color/darkGreen"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/darkGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/lineKedua"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/grey30"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageEmail"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/gmail"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/_email"
+                    android:textSize="@dimen/textSize_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageEmail"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/emailButton"
+                    android:layout_width="@dimen/dimen_62dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:text="@string/open"
+                    app:cornerRadius="@dimen/dimen_10dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/dimen_2dp"
+                    android:paddingBottom="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:textColor="@color/darkGreen"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/darkGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/lineetiga"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/grey30"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageMaps"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/maps"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textMaps"
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/maps"
+                    android:textSize="@dimen/textSize_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageMaps"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mapsButton"
+                    android:layout_width="@dimen/dimen_62dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:text="@string/open"
+                    app:cornerRadius="@dimen/dimen_10dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/dimen_2dp"
+                    android:paddingBottom="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:textColor="@color/darkGreen"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/darkGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/lineeempat"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/grey30"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageAbout"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:src="@drawable/setting"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textAbout"
+                    style="@style/robotoReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/about_version"
+                    android:textSize="@dimen/textSize_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageAbout"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/aboutButton"
+                    android:layout_width="@dimen/dimen_62dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:text="@string/open"
+                    app:cornerRadius="@dimen/dimen_10dp"
+                    android:textSize="@dimen/textSize_12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/dimen_2dp"
+                    android:paddingBottom="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:textColor="@color/darkGreen"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/darkGreen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linelima"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/grey30"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

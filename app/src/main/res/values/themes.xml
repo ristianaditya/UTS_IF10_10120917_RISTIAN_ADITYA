@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UTS_IF10K_10120917_RISTIAN_ADITYA" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="m">@color/darkGreen</item>
+    </style>
+    <style name="robotoReguler" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+    <style name="robotoMedium" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="robotoBold" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:background">@color/pink</item>
+    </style>
+    <style name="LinearLayoutHobbyList">
+        <item name="android:padding">@dimen/dimen_5dp</item>
+        <item name="android:paddingStart">@dimen/dimen_7dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_7dp</item>
+        <item name="android:background">@drawable/badges_shape_hobby</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">@dimen/dimen_25dp</item>
+    </style>
+    <style name="searchForm">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">@dimen/dimen_45dp</item>
+        <item name="android:background">@drawable/deskripsi_background</item>
+        <item name="android:padding">@dimen/dimen_15dp</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:hint">@string/search</item>
+        <item name="android:drawableEnd">@drawable/baseline_search_24</item>
+        <item name="drawableTint">@color/grey50</item>
+    </style>
+    <style name="textTitleSub">
+        <item name="android:textAppearance">@style/robotoBold</item>
+        <item name="android:textColor">@color/darkGreen</item>
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+    </style>
+    <style name="cornerContent" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/music_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60dp"
+    android:layout_marginBottom="@dimen/dimen_10dp" >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:textSize="@dimen/textSize_14sp"
+        style="@style/robotoReguler"
+        android:textColor="@color/grey90"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview"
+        app:layout_constraintStart_toEndOf="@+id/imageview"
+        app:layout_constraintTop_toTopOf="@+id/imageview" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imagePlay"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_play_arrow_24"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:text="@string/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/darkGreen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
