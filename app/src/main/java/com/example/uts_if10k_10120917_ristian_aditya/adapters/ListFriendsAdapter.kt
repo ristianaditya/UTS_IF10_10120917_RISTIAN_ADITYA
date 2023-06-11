@@ -1,3 +1,8 @@
+//nama : Ristian Aditya
+//NIM  : 10120917
+//Kelas : IF10K
+//TGL Pengerjaan : 29 Mei 2023
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.uts_if10k_10120917_ristian_aditya.R
 import com.example.uts_if10k_10120917_ristian_aditya.models.FriendViewModel
 import com.example.uts_if10k_10120917_ristian_aditya.models.ItemsViewModel
-
 class ListFriendsAdapter(private val mList: List<FriendViewModel>) : RecyclerView.Adapter<ListFriendsAdapter.ViewHolder>() {
 
     // create new views

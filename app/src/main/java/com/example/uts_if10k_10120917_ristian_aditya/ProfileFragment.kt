@@ -1,5 +1,10 @@
 package com.example.uts_if10k_10120917_ristian_aditya
 
+//nama : Ristian Aditya
+//NIM  : 10120917
+//Kelas : IF10K
+//TGL Pengerjaan : 29 Mei 2023
+
 import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -60,7 +65,6 @@ class ProfileFragment : Fragment() {
             intent.data = Uri.parse(url)
 
             try {
-                val packageInfo = packageManager?.getPackageInfo("com.instagram.android", 0)
                 intent.setPackage("com.instagram.android")
                 startActivity(intent)
             } catch (e: PackageManager.NameNotFoundException) {

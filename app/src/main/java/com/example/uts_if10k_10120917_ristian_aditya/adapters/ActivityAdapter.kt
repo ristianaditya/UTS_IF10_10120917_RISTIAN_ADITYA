@@ -1,3 +1,8 @@
+//nama : Ristian Aditya
+//NIM  : 10120917
+//Kelas : IF10K
+//TGL Pengerjaan : 29 Mei 2023
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
